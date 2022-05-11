@@ -1,0 +1,266 @@
+:root {
+    --primarycolor: white;
+    --backgroundcolor:black;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    color: var(--primarycolor);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Arial', sans-serif;
+	-webkit-font-smoothing: antialiased;
+    color: #999;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.showcase {
+    background: url('netflix-brand-hero-image.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 102vh;
+    position: relative;
+    border-bottom: 0.5rem solid #222;
+}
+
+.showcase::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.40);
+    box-shadow: inset 40px 80px 200px #000000, inset -40px -80px 200px #000000;
+}
+
+.showcase-top {
+    z-index: 2;
+    position: relative;
+    height: 6rem;
+}
+
+.showcase-top img {
+    width: 7rem;
+    left: 0%;
+    transform: translate(-75%, +20%);
+	margin-left: 6rem;
+}
+
+.showcase-top a {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    transform: translate(-90%, +70%);
+}
+
+.showcase-content{
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: small;
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.h1-text {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.showcase-content p {
+    color: #fff;
+	font-size: 1.3rem;
+	line-height: 1.5;
+    padding-top: 1.4rem;
+}
+
+.email {
+    height: 3.2rem;
+    color: black;
+    width: 35rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    top: 0;
+    right: 0;
+    display: inline-block;
+    background: red;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+}
+
+.btn:hover {
+	opacity: 0.9;
+}
+
+.btn-rounded1{
+    margin-right: 5rem;
+    background-color: black;
+    border: 0.01rem solid white
+}
+
+.get-started {
+    padding: 0.9rem;
+}
+
+.main-cont {
+    border-bottom: 0.6rem solid #222;
+}
+
+.sec-container {
+    display: flex;
+    margin: 3rem 10rem;
+    justify-content: center;
+}
+
+.title {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    width: 35rem;
+    padding-top: 3.2rem;
+}
+
+.p-text {
+    font-size: 1.625rem;
+    font-weight: 400;
+    width: 35rem;
+}
+
+.img {
+    position: center;
+    width: 26.5rem;
+    height: 23.2rem;
+    padding-bottom: 3rem;
+}
+
+.que-title {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 3rem;
+}
+
+.que-section {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 2.5rem 25rem;
+    width: 59%;
+    left: 0%;
+    transform: translate(-14%, +1%);
+}
+
+.questions {
+    padding: 0.8rem;
+    background-color: rgb(63, 61, 61);
+    border: 0.3rem solid black;
+    height: 5.5rem;
+}
+
+#myHeader {
+    font-weight: 100;
+}
+
+
+.collapsible {
+    background-color: rgb(63, 61, 61);
+    cursor: pointer;
+    padding: 1rem 0rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    float: right;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.subscribe {
+    margin: 3.5rem 21rem;
+}
+
+.footer {
+    margin: 2rem auto;
+    max-width: 70%;
+}
+
+.footer, footer a {
+    color: #999;
+    font-size: 0.8rem;
+}
+
+.footer p {
+    margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.footer li {
+    line-height: 1.9rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.footer-btn {
+    border: #999;
+}
+
+.footer-lang {
+    margin: 1.2rem 0rem;
+}
+
+.footer-btn {
+    font-size: 1.3rem;
+    padding: 0.2rem;
+    border: 0.01rem solid #999;
+    color: #999;
+}
+
+#footer-p {
+    color: #999;
+}
